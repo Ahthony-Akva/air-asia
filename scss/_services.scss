@@ -1,0 +1,23 @@
+@import './_services-header.scss';
+@import './_services-content.scss';
+@import './_services__partners.scss';
+
+.wrapper__services{
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.42;
+  .services{
+    background: url('../img/img-services/headline.jpg') no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+  }
+}
+

@@ -1,0 +1,26 @@
+.container__container{
+  .services__header{
+    margin-bottom: 5.2rem;
+  }
+  
+  .header__tittle{
+    color: #fff;
+    font-weight: 700;
+    font-size: 72px;}
+  .breadcrumbs{
+    display: flex; 
+    margin-top: 6.8rem;
+    .breadcrumbs__element{
+      color: #fff;
+      margin-left: .2rem;
+      :hover{
+        color: #f6bbbb;
+      }}
+    .breadcrumbs__element:not(:last-child)::after{
+        content: " /";
+        color: #fff;
+      }
+    .breadcrumbs__element:last-child{text-decoration: underline;}
+    }
+    .breadcrumbs__element:first-child{margin-left: 0;}
+}

@@ -1,0 +1,72 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding-top: 2rem;
+  margin-bottom: 8.8rem;
+  &__menu{
+    display: flex;
+    width: 100%;
+    margin: 2rem 0 0 6rem;
+    justify-content: space-between;}}
+
+.logo {
+  margin-top: 2rem;
+}
+
+.menu {
+		&__list {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;}
+    &__items:last-child{margin: 0;}
+		&__items {
+      margin-right: 2rem;
+      :hover{
+        color: #f6bbbb;
+      }}
+		&__item {
+      width: 56px;
+      font-weight: 400;}}
+
+.address {
+  animation: shakeY infinite;
+  animation-duration: 10s;
+    &__tel {  text-align: right;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+		}
+		&__graphic-job {  text-align: right;
+      color: #fff;
+      margin: 0;
+		}
+    .address__graphic-hidden{
+      opacity: 0;
+      width: 11.6rem;
+      color: black;
+      position: absolute;
+      transition: .8s;
+      animation: fadeOutDown;
+      animation-duration: 3s;
+      .triangle{
+        margin-left: 9rem;
+        width: 0; 
+        height: 0; 
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-bottom: 1rem solid #ededed;
+      }
+      .address__hidden-block{
+        margin-left: 2rem;
+        background-color: #ededed;
+        width: 100%;
+        border-radius: .5rem;
+        padding: .8rem;
+      
+      }
+    }
+    .address__graphic-hidden:hover{opacity: 1;}
+	
+}
+
