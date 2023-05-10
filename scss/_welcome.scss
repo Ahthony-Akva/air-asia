@@ -29,11 +29,13 @@
     margin-bottom: 2rem;
     color: #fff;
     background: url('../img/welcome/shades.png') no-repeat;
+    background-size: contain;
   }
   &__logo{
     width: 19.92rem;
     height: 8.5rem;
-    background: url('../img/welcome/welcome-logo.png');}
+    background: url('../img/welcome/welcome-logo.png');
+    background-size: contain;}
   .logo__link{
     display: flex;
     width: 19.92rem;
@@ -45,3 +47,17 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 34.28rem){
+  .welcome__content{
+    padding-top: .42rem;
+    text-align: center;
+  }
+  .welcome__logo{
+    width: 10.92rem;
+    height: 8.5rem;
+    background: url('../img/welcome/welcome-logo.png');}
+  .welcome__text{
+    background: none;
+  }
+  }

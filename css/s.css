@@ -459,11 +459,13 @@
   margin-bottom: 2rem;
   color: #fff;
   background: url("../img/welcome/shades.png") no-repeat;
+  background-size: contain;
 }
 .welcome__logo {
   width: 19.92rem;
   height: 8.5rem;
   background: url("../img/welcome/welcome-logo.png");
+  background-size: contain;
 }
 .welcome .logo__link {
   display: flex;
@@ -476,6 +478,20 @@
   font-size: 18px;
 }
 
+@media (max-width: 34.28rem) {
+  .welcome__content {
+    padding-top: 0.42rem;
+    text-align: center;
+  }
+  .welcome__logo {
+    width: 10.92rem;
+    height: 8.5rem;
+    background: url("../img/welcome/welcome-logo.png");
+  }
+  .welcome__text {
+    background: none;
+  }
+}
 .feedback {
   background: url("../img/img-services/headline.jpg") no-repeat;
   background-size: contain;
@@ -671,6 +687,218 @@ label {
   text-decoration: none;
 }
 
+@media (max-width: 80.14rem) {
+  .header, .footer {
+    transition: 0.2s;
+    width: 80%;
+    margin-left: 8rem;
+    padding-top: 0.5rem;
+    margin-bottom: 3.8rem;
+  }
+  .header__block, .footer__block {
+    margin-left: 15rem;
+  }
+  .preview {
+    margin-left: 8rem;
+  }
+  .preview__tittle {
+    font-size: 2.5rem;
+  }
+  .fire-tours {
+    margin: 9rem 8rem 0;
+  }
+  .fire-tours__tittle {
+    font-size: 25px;
+  }
+  .fire-tours__fire {
+    display: none;
+  }
+  .fire-tours__cards {
+    width: 80%;
+  }
+  .fire-tours__card {
+    width: 20rem;
+  }
+  .news {
+    width: 80%;
+    height: auto;
+    margin: 5.19rem 8rem 0;
+  }
+  .news__tittle {
+    font-size: 25px;
+  }
+  .news__cheepest-tours-content-one, .news__cheepest-tours-content-two {
+    width: 31rem;
+  }
+  .about-us {
+    width: 80%;
+    margin: 5rem 8rem 0.5rem;
+  }
+  .about-us__image {
+    width: 23rem;
+    height: 24rem;
+  }
+  .about-us__content {
+    width: 74rem;
+    height: 21.6rem;
+    margin: 7rem 0 3.5rem -10rem;
+    background: url("../img/mountains.jpg") no-repeat center;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+  }
+  .about-us__article {
+    margin: 2.8rem 3rem;
+  }
+  .about-us__tittle {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .about-us__text {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+  .footer__center {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .menu__list {
+    display: none;
+  }
+  .button {
+    border: 0.01px solid #F5170E;
+    font-size: 10px;
+  }
+  .services__partners-tittle {
+    width: 80%;
+    margin-left: 0;
+  }
+  .services__content {
+    margin-left: 15rem;
+  }
+  .services__image {
+    width: 20rem;
+    height: 15rem;
+  }
+  .services__card-content {
+    width: 35rem;
+  }
+  .services__partners {
+    margin-left: 15rem;
+    width: 80%;
+  }
+}
+@media (max-width: 32.14rem) {
+  html, body {
+    transition: 1s;
+    line-height: 0.9;
+    font-size: 10px;
+  }
+  .header, .footer {
+    width: 30%;
+    margin-left: 30rem;
+    padding-top: 0.5rem;
+    margin-bottom: 3.8rem;
+  }
+  .header__menu, .footer__menu {
+    margin: 2rem 0 0 2rem;
+  }
+  .header .address__tel, .footer .address__tel {
+    font-size: 15px;
+  }
+  .header .menu__list, .footer .menu__list {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .preview {
+    margin-left: 30rem;
+  }
+  .preview__tittle {
+    font-size: 2rem;
+  }
+  .fire-tours {
+    margin: 11rem 30rem 0;
+  }
+  .fire-tours__tittle {
+    font-size: 25px;
+  }
+  .fire-tours__fire {
+    display: none;
+  }
+  .fire-tours__cards {
+    width: 80%;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .fire-tours__card {
+    width: 25rem;
+  }
+  .news {
+    width: 80%;
+    height: auto;
+    margin: 10rem 30rem 0;
+  }
+  .news .slide {
+    display: flex;
+    justify-content: start;
+    margin: 5.2rem 0;
+  }
+  .news .slide__pages {
+    display: none;
+  }
+  .news__tittle {
+    font-size: 25px;
+  }
+  .news__cheepest-tours {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .news__cheepest-tours-content-one, .news__cheepest-tours-content-two {
+    width: 25rem;
+  }
+  .about-us {
+    width: 80%;
+    margin: 12rem 30rem 0.5rem;
+  }
+  .about-us__image {
+    width: 13rem;
+    height: 14rem;
+  }
+  .about-us__content {
+    width: 25rem;
+    height: 21.6rem;
+    margin: 7rem 0 3.5rem -10rem;
+    background: url("../img/mountains.jpg") no-repeat center;
+    color: rgb(0, 0, 0);
+    line-height: 1.4;
+  }
+  .about-us__article {
+    margin: 2.8rem 3rem;
+  }
+  .about-us__tittle {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .about-us__text {
+    width: 70%;
+    line-height: 0.8;
+    margin-bottom: 4rem;
+  }
+  .footer__center {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .menu__list {
+    display: none;
+  }
+  .button {
+    border: 0.01px solid #F5170E;
+    font-size: 10px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -725,6 +953,7 @@ ul, li {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  margin-bottom: 0;
 }
 
 .button {
