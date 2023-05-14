@@ -7,6 +7,11 @@
 }
 .container__container{flex: 1 0 auto;
   }
+[class*="__container"] {
+  min-width: 81.42rem;
+  margin: 0 27.8rem;
+}
+  
 .feedback-banner{padding-bottom: 7.5rem;}
 .feedback {
   &__cards {
@@ -111,6 +116,7 @@
   &__form-control{
     width: 50%;
     height: 5rem;
+    padding-left: 2rem;
     border: none;
     font-size: 1rem;
     &:focus-visible{
@@ -119,6 +125,7 @@
   &__form-textarea{
     margin-top: 1.5rem;
     width: 100%;
+    padding: 2rem;
     height: 17rem;
     font-size: 1rem;
     border: none;

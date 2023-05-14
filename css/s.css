@@ -51,6 +51,17 @@
   color: #fff;
   margin: 0;
 }
+.address .address__graphic-hidden::before {
+  content: "";
+  display: inline-block;
+  margin-left: 9rem;
+  width: 0;
+  height: 0;
+  margin-bottom: -0.5rem;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid #ededed;
+}
 .address .address__graphic-hidden {
   opacity: 0;
   width: 11.6rem;
@@ -59,14 +70,6 @@
   transition: 0.8s;
   animation: fadeOutDown;
   animation-duration: 3s;
-}
-.address .address__graphic-hidden .triangle {
-  margin-left: 9rem;
-  width: 0;
-  height: 0;
-  border-left: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-  border-bottom: 1rem solid #ededed;
 }
 .address .address__graphic-hidden .address__hidden-block {
   margin-left: 2rem;
@@ -429,7 +432,7 @@
 
 .wrapper__welcome {
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
   background: url("../img/welcome/welcome.jpg") no-repeat;
   background-size: contain;
@@ -444,7 +447,6 @@
   justify-content: center;
 }
 .welcome__content {
-  padding-top: 25.42rem;
   animation: heartBeat infinite;
   animation-duration: 2s;
   text-align: center;
@@ -502,6 +504,11 @@
 
 .container__container {
   flex: 1 0 auto;
+}
+
+[class*=__container] {
+  min-width: 81.42rem;
+  margin: 0 27.8rem;
 }
 
 .feedback-banner {
@@ -613,6 +620,7 @@
 .feedback__form-control {
   width: 50%;
   height: 5rem;
+  padding-left: 2rem;
   border: none;
   font-size: 1rem;
 }
@@ -622,6 +630,7 @@
 .feedback__form-textarea {
   margin-top: 1.5rem;
   width: 100%;
+  padding: 2rem;
   height: 17rem;
   font-size: 1rem;
   border: none;
@@ -726,7 +735,7 @@ body .wrapper {
 }
 
 [class*=__container] {
-  min-width: 81.4rem;
+  min-width: 81.42rem;
   margin: 0 27.8rem;
 }
 
